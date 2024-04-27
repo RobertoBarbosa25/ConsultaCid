@@ -1,0 +1,72 @@
+[
+  {
+    "keyword": "Funcionalidade",
+    "name": "Consultar registro de gastos municipais",
+    "line": 2,
+    "id": "consultar-registro-de-gastos-municipais",
+    "tags": [],
+    "uri": "consulta.feature",
+    "elements": [
+      {
+        "id": "consultar-registro-de-gastos-municipais;realizar-consultas",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Realizar consultas",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 5,
+            "name": "Que o usuário acesse a página inicial de consulta",
+            "result": {
+              "status": "passed",
+              "duration": 768000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 6,
+            "name": "ao realizar uma consulta",
+            "result": {
+              "status": "passed",
+              "duration": 778000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 7,
+            "name": "o usuário venha a definir o fundo",
+            "result": {
+              "status": "passed",
+              "duration": 155000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 8,
+            "name": "o usuário define as datas",
+            "result": {
+              "status": "passed",
+              "duration": 2191000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 9,
+            "name": "salva os dados em CSV",
+            "result": {
+              "status": "passed",
+              "duration": 24000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
