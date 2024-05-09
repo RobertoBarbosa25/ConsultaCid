@@ -19,8 +19,10 @@ Then ("o usuário define as datas", () => {
     consulta.definirData(dataInicial, dataFinal)
 })
 And("salva os dados em CSV", async () => {
+    console.log('vou consultar o extrair data')
     try {
         const data = await consulta.extrairData();
+        //const data  =  '20012023';
         
         console.log('Data extraída:', data);
         

@@ -26,9 +26,16 @@ class Consulta{
             
     }
     
+    
     async extrairData() {
+        cy.wait(500);
+        console.log('teste123')
         try {
-            const dataElement = await cy.get('.rich-subtable-row.odd .rich-subtable-cell.texto');
+            console.log('inciando a extração')
+            const dataElement = await cy.get('#formulario\\:demonstrativoList\\:2\\:subTableLancamentos\\:2\\:j_id41', {timeout: 10000})
+            .should('be.visible');
+            console.log('passando')
+            cy.wait(500);
             const data = await dataElement.invoke('text');
 
             console.log('Data extraída da tela:', data);
@@ -45,7 +52,7 @@ class Consulta{
             console.log('Dados recebidos:', { data });
             const csv = await this.converterParaCsv(data);
             console.log('Conteúdo do arquivo CSV:', csv);
-            cy.writeFile('dados.csv', csv, { flag: 'w+' }); // Substitui o conteúdo existente
+            cy.writeFile('teste2.csv', csv, { flag: 'w+' }); // Substitui o conteúdo existente
             console.log('Dados salvos com sucesso no arquivo dados.csv');
         } catch (error) {
             console.error(`Erro ao salvar os dados no arquivo CSV: ${error.message}`);

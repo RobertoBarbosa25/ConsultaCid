@@ -22,7 +22,7 @@
             "name": "Que o usuário acesse a página inicial de consulta",
             "result": {
               "status": "passed",
-              "duration": 768000000
+              "duration": 767000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "ao realizar uma consulta",
             "result": {
               "status": "passed",
-              "duration": 778000000
+              "duration": 1063000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "o usuário venha a definir o fundo",
             "result": {
               "status": "passed",
-              "duration": 155000000
+              "duration": 148000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "o usuário define as datas",
             "result": {
               "status": "passed",
-              "duration": 2191000000
+              "duration": 2361000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "salva os dados em CSV",
             "result": {
               "status": "passed",
-              "duration": 24000000
+              "duration": 1039000000
             }
           }
         ]
